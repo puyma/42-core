@@ -1,1 +1,1 @@
-# 42_core
+# Cursus
