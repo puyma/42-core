@@ -3,7 +3,12 @@
 # variables 
 
 EDITOR='vim'
-PUYMA=/Users/$USER/Documents/puyma
+CORE=/Users/$USER/Projectes/42-core
+
+# nvm alias
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # aliases
 
@@ -24,4 +29,4 @@ alias status='git status'
 
 # system config script
 
-alias setup="sh $PUYMA/config_darwin.sh"
+alias setup="sh $CORE/config_darwin.sh"

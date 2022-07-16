@@ -1,10 +1,9 @@
 #!/bin/sh
 
-
 # variables 
 
 HOSTNAME="$echo $hostname"
-export PUYMA=/Users/$USER/Documents/puyma
+export CORE=/Users/$USER/Projectes/42-core
 
 # toggle dark mode for macOS alias
 
@@ -13,12 +12,12 @@ alias dark="osascript -e 'tell app \"System Events\"\
 
 # terminal config
 
-ln -f $PUYMA/.zshrc ~/.zshrc
+ln -f $CORE/.zshrc ~/.zshrc
 source ~/.zshrc
 
 # git config
 
-ln -f $PUYMA/.gitignore ~/.gitignore
+ln -f $CORE/.gitignore ~/.gitignore
 git config --global core.excludesfile ~/.gitignore 
 git config --global user.name "puyma"
 git config --global user.email $MAIL
