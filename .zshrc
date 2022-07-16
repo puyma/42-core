@@ -27,6 +27,7 @@ alias fclean='make fclean'
 alias gcc='gcc -Wall -Werror -Wextra'
 alias ignore="$EDITOR ~/.gitignore"
 alias megapaco='paco --strict'
+alias multipull="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
 alias norm='norminette -R CheckForbiddenSourceHeader | grep -v OK!'
 alias push='git push'
 alias status='git status'
@@ -34,3 +35,12 @@ alias status='git status'
 # system config script
 
 alias setup="sh $CORE/config_darwin.sh"
+
+
+# 
+# info
+# 
+# multipull alias from https://gabac.blog/posts/git-pull-many-repos-at-once/
+# 
+#
+#
