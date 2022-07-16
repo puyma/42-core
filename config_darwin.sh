@@ -1,15 +1,29 @@
 #!/bin/sh
 
-HOSTNAME = 'echo hostname'
-PUYMA = "/Users/$USER/Documents/42_core"
+
+# variables 
+
+HOSTNAME="$echo $hostname"
+export PUYMA=/Users/$USER/Documents/puyma
+
+# toggle dark mode for macOS alias
 
 alias dark="osascript -e 'tell app \"System Events\"\
 	to tell appearance preferences to set dark mode to not dark mode'"
 
+# terminal config
+
+ln -f $PUYMA/.zshrc ~/.zshrc
+source ~/.zshrc
+
 # git config
-git config --global core.excludesfile ~/Documents/puyma/.gitignore_global
+
+ln -f $PUYMA/.gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore 
 git config --global user.name "puyma"
-# git config --global user.email $EMAIL
+git config --global user.email $MAIL
+
+# macOS config
 
 osascript -e 'set Volume 0'
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
@@ -20,33 +34,3 @@ defaults write com.apple.Siri StatusMenuVisible -bool false
 killall Finder && killall -KILL SystemUIServer
 
 echo "Setup: OK"
-
-# 
-# 
-# 
-# .zsh config
-# 
-# PUYMA = "/Users/$USER/Documents/42_core"
-#
-# alias francinette=/Users/$USER/francinette/tester.sh
-# alias paco=/Users/$USER/francinette/tester.sh
-#
-# alias aout='./a.out'
-# alias ascii='man ascii'
-# alias cd..='cd ..'
-# alias fclean='make fclean'
-# alias gcc='gcc -Wall -Werror -Wextra'
-# alias ignore="vim ~/$PUYMA/.gitignore_global"
-# alias megapaco='paco --strict'
-# alias norm='norminette -R CheckForbiddenSourceHeader | grep -v OK!'
-# alias push='git push'
-# alias status='git status'
-#
-# system configuration script
-# alias setup="sh $PUYMA/sysconfig.sh"
-#
-# macOS toggle dark mode
-# alias dark="osascript -e 'tell app \"System Events\"\
-#	to tell appearance preferences\
-#	to set dark mode\
-#	to not dark mode'"

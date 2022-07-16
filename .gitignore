@@ -1,0 +1,10 @@
+*.a
+*.o
+*.d
+*.swo
+*.swp
+*.swn
+*.swm
+a.out
+*main*
+
