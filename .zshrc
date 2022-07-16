@@ -5,6 +5,10 @@
 EDITOR='vim'
 CORE=/Users/$USER/Projectes/42-core
 
+# brew alias
+
+export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/sbin
+
 # nvm alias
 
 export NVM_DIR=~/.nvm
