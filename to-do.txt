@@ -1,1 +1,1 @@
-link ~/Projectes to ~/Documents ONLY at the campus computer
+OK: link ~/Projectes to ~/Documents ONLY at the campus computer
