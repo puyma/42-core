@@ -4,6 +4,10 @@
 
 EDITOR='vim'
 CORE=/Users/$USER/Projectes/42-core
+HOSTNAME="$echo $hostname"
+
+if [[ $HOSTNAME == *".42barcelona.com"* ]]
+then
 
 # brew alias
 
@@ -13,6 +17,8 @@ export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/sbin
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+fi
 
 # aliases
 
