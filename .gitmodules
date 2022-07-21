@@ -1,15 +1,19 @@
 [submodule "cpiscine"]
 	path = cpiscine
-	url = git@github.com:puyma/42_cpiscine.git
+	url = git@github.com:puyma/42-cpiscine.git
+	branch = master
 [submodule "get_next_line"]
 	path = get_next_line
-	url = git@github.com:puyma/42_get_next_line.git
+	url = git@github.com:puyma/42-get_next_line.git
+	branch = master
 [submodule "ft_printf"]
 	path = ft_printf
-	url = git@github.com:puyma/42_printf.git
+	url = git@github.com:puyma/42-printf.git
+	branch = master
 [submodule "born2beroot"]
 	path = born2beroot
-	url = git@github.com:puyma/42_born2beroot.git
+	url = git@github.com:puyma/42-born2beroot.git
+	branch = main
 [submodule "libft"]
 	path = libft
 	url = git@github.com:puyma/42-libft.git
