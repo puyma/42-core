@@ -1,9 +1,6 @@
 [submodule "cpiscine"]
 	path = cpiscine
 	url = git@github.com:puyma/42_cpiscine.git
-[submodule "libft"]
-	path = libft
-	url = git@github.com:puyma/42_libft.git
 [submodule "get_next_line"]
 	path = get_next_line
 	url = git@github.com:puyma/42_get_next_line.git
