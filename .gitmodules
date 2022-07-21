@@ -10,6 +10,3 @@
 [submodule "born2beroot"]
 	path = born2beroot
 	url = git@github.com:puyma/42_born2beroot.git
-[submodule "libft"]
-	path = libft
-	url = git@github.com:puyma/42-libft.git
