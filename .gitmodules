@@ -13,7 +13,7 @@
 [submodule "born2beroot"]
 	path = born2beroot
 	url = git@github.com:puyma/42-born2beroot.git
-	branch = main
+	branch = master
 [submodule "libft"]
 	path = libft
 	url = git@github.com:puyma/42-libft.git
