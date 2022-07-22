@@ -2,12 +2,12 @@
 	path = cpiscine
 	url = git@github.com:puyma/42-cpiscine.git
 	branch = master
-[submodule "get_next_line"]
-	path = get_next_line
+[submodule "get-next-line"]
+	path = get-next-line
 	url = git@github.com:puyma/42-get-next-line.git
 	branch = master
-[submodule "ft_printf"]
-	path = ft_printf
+[submodule "ft-printf"]
+	path = ft-printf
 	url = git@github.com:puyma/42-printf.git
 	branch = master
 [submodule "born2beroot"]
